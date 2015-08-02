@@ -6,4 +6,4 @@ RUN apt-get clean && apt-get update
 RUN apt-get install -y build-essential python-pip python-dev \
     libjpeg-dev libfreetype6 libfreetype6-dev \
     zlib1g-dev gettext libmysqlclient-dev \
-    libcurl4-openssl-dev libssl-dev libffi-dev
+    libcurl4-openssl-dev libssl-dev libffi-dev sqlite3
