@@ -1,8 +1,8 @@
 # Use ubuntu 14.04 as main image
 FROM ubuntu:14.04
 
-echo "deb http://http.debian.net/debian jessie-backports main" | \
-RUN tee -a /etc/apt/sources.list
+RUN echo "deb http://http.debian.net/debian jessie-backports main" | \
+tee -a /etc/apt/sources.list
 
 # Install dependencies
 RUN apt-get clean && apt-get update
